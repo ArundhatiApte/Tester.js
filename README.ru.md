@@ -4,9 +4,9 @@
 
 ### Установка
 
-`npm install tester`  
+`npm install github:ArundhatiApte/Tester-JS`  
 или  
-`yarn add Tester`
+`yarn add github:ArundhatiApte/Tester-JS`
 
 ### Пример использования
 
