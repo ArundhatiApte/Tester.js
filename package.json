@@ -4,5 +4,6 @@
   "exports": {
     "import": "./esExport.mjs",
     "require": "./src/Tester.js"
-  }
+  },
+  "version": "1.0.0"
 }
