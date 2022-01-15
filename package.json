@@ -1,4 +1,5 @@
 {
+  "name": "tester",
   "main": "./src/Tester.js",
   "exports": {
     "import": "./esExport.mjs",
