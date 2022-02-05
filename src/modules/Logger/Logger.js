@@ -122,7 +122,15 @@ const _logFailedListenersOfEvent = function(nameOfEvent, failedListeners) {
 
 const _writeFailedListenerToStream = function(stream, errorAndFn) {
   stream.write("*)");
-  stream.write(errorAndFn.listener.name || "anonimus ");
+
+  const nameOfFunction = errorAndFn.listener.name;
+  if (nameOfFunction) {
+    stream.write(nameOfFunction);
+    stream.write(" ");
+  } else {
+    stream.write("anonimus ");
+  }
+  
   _writeErrorToStream(stream, errorAndFn.error);
 };
 
