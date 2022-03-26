@@ -1,5 +1,7 @@
 #!/bin/sh
 
+rm tester.package.zip
+
 zip -r tester.package.zip . \
   -x node_modules/\*\
   -x documentation/\*\
