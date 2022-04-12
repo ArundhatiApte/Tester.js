@@ -4,9 +4,9 @@ Minimalistic module for testing.
 
 ### Installation 
 
-`npm install github:ArundhatiApte/Tester-JS`  
+`npm install github:ArundhatiApte/Tester.js`  
 or  
-`yarn add github:ArundhatiApte/Tester-JS`
+`yarn add github:ArundhatiApte/Tester.js`
 
 ### Example of usage
 
