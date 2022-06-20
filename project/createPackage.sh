@@ -1,13 +1,8 @@
 #!/bin/sh
 
-rm tester.package.zip
+rm tester.package.tar.gz
 
-zip -r tester.package.zip . \
-  -x node_modules/\*\
-  -x documentation/\*\
-  -x .git/\*\
-  -x examples/\*\
-  -x *test\*\
-  -x ".gitignore"\
-  -x *test/\*\
-  -x "createPackage.sh"
+tar -czvf tester.package.tar.gz \
+  --exclude='test*'\
+  --exclude='tests.js'\
+  ./../LICENCE package.json ./../README.md src
