@@ -1,7 +1,7 @@
 "use strict";
 
-import Tester from "./../src/Tester.js";
-import ErrorWithSmallStack from "./../src/tests/ErrorWithSmallStack.js";
+import Tester from "./../project/src/Tester.js";
+import ErrorWithSmallStack from "./../project/src/tests/ErrorWithSmallStack.js";
 
 const Logger = class {
   writeHeader(tester) {

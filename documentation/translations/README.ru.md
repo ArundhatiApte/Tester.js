@@ -4,7 +4,7 @@
 
 ### Установка
 
-Скачайть репозиторий.
+Скачать репозиторий.
 В папке project запустить скрипт createPackage.sh, после чего появится файл tester.package.tar.gz.
 В каталоге вашего проекта установите модуль менеджером пакетов:
 `npm install path/to/tester.package.tar.gz`.
@@ -40,7 +40,7 @@ tester.run();
 
 ### Ссылки
 
-- [документация](/documentation/API.ru.md)
+- [документация](/documentation/translations/API.ru.md)
 - [примеры](/examples)
 
 ### Лицензия
