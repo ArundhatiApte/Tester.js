@@ -4,9 +4,10 @@ Minimalistic module for testing.
 
 ### Installation 
 
-`npm install github:ArundhatiApte/Tester.js`  
-or  
-`yarn add github:ArundhatiApte/Tester.js`
+Download repo. In project folder execute script createPackage.sh.
+There will be file tester.package.tar.gz.
+Install module by package manager:
+`npm install path/to/tester.package.tar.gz`.
 
 ### Example of usage
 

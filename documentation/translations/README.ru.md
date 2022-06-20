@@ -4,9 +4,10 @@
 
 ### Установка
 
-`npm install github:ArundhatiApte/Tester.js`  
-или  
-`yarn add github:ArundhatiApte/Tester.js`
+Скачайть репозиторий.
+В папке project запустить скрипт createPackage.sh, после чего появится файл tester.package.tar.gz.
+В каталоге вашего проекта установите модуль менеджером пакетов:
+`npm install path/to/tester.package.tar.gz`.
 
 ### Пример использования
 
