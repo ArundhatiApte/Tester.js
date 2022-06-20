@@ -13,8 +13,8 @@ or
 ```js
 "use strict";
 
-import Tester from "tester"; // if npm
-// const Tester = require("tester") // if commonJS
+import Tester from "tester";
+// const Tester = require("tester");
 
 const tester = new Tester("testing something");
 
@@ -44,9 +44,3 @@ tester.run();
 ### License
 
 [Apache-2.0](http://www.apache.org/licenses/LICENSE-2.0)
-
-### Support
-- Bitcoin Cash: qq0j7w2nvjvtk6r5pxux8d3ekse6kqz44qxxr7ayw6
-- Ethereum: 0x6987e6De173C0f055B7039B314f2cedbFDA33582
-- Litecoin: ltc1qtc8mh6lhv038tsm9z5y9jfxdtk5rlr6ueuc78u
-- Polkadot: 1RMn2ThRFfz2kdkR3eqoAmaQFHT9yQVHYrhPdcKVNpzz9bU
