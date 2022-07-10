@@ -29,11 +29,11 @@ const checkRunningTesterWithAsyncTestsInTime = (function() {
   };
 
   const createNameOfTester = function(isAllTestsParallel) {
-    return isAllTestsParallel ? "test parallel" : "test seqeluency"
+    return isAllTestsParallel ? "test parallel" : "test sequency"
   };
 
   const addAsyncTestsToTester = function(tester, timeMSForOneTest, countOfTests, isAllTestsParallel) {
-    const prefixOfTestName = isAllTestsParallel ? "parallel" : "seqeluence";
+    const prefixOfTestName = isAllTestsParallel ? "parallel" : "sequency";
     let test;
     for (let i = 0; i < countOfTests; i += 1) {
       test = createAwaitingTest(timeMSForOneTest);
@@ -58,13 +58,14 @@ const checkRunningTesterWithAsyncTestsInTime = (function() {
   const isNumInRange = function(number, min, max) {
     return min <= number && number <= max;
   };
-  
+
   return checkRunningTesterWithAsyncTestsInTime;
 })();
 
 (async function() {
   const timeMSForOneTest = 400,
         countOfTests = 6;
+
   const isParallelToMinTimeAndMaxTimeOfTests = [
     [true, [timeMSForOneTest, timeMSForOneTest * 2]],
     [false, [timeMSForOneTest * countOfTests, timeMSForOneTest * (countOfTests + 1)]]

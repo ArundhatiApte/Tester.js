@@ -22,14 +22,14 @@ const Logger = class {
     const streamForLog = this[_stream];
     streamForLog.write(tester.name);
     streamForLog.write(" (V: ");
-    
+
     let count = reportAboutAllTests.countOfSuccesTests;
     if (count !== undefined) {
       streamForLog.write(count.toString());
     } else {
       streamForLog.write("0");
     }
-    
+
     count = reportAboutAllTests.countOfFailedTests;
     if (count) {
       streamForLog.write(" , X:");
@@ -52,11 +52,11 @@ const Logger = class {
     streamForLog.write(symbolOfFail);
     streamForLog.write(" : ");
     writeLnToStream(streamForLog, reportAboutTest.name);
-  
+
     if (isSucces) {
       return;
     }
-    
+
     if (reportAboutTest.getHasPrepare() && reportAboutTest.getIsPrepareFailed()) {
       _writeSubErrorOfTest(streamForLog, labels.prepare, reportAboutTest.errorOfPrepare);
     }
@@ -81,10 +81,10 @@ const _writeSubErrorOfTest = function(streamForLog, nameOfOperation, error) {
 
 const _writeErrorToStream = function(stream, error) {
   if (error instanceof Error) {
-    stream.write(error.stack); //ok
+    stream.write(error.stack);
   } else {
-    stream.write(new String(error).toString()); //ok
-  }     
+    stream.write(new String(error).toString());
+  }
 };
 
 const _stream = "_";
@@ -112,7 +112,7 @@ const _logFailedListenersOfEvent = function(nameOfEvent, failedListeners) {
   stream.write("Errors of ");
   stream.write(nameOfEvent);
   stream.write(" event:\n  ");
-  
+
   for (const failedListener of failedListeners) {
     _writeFailedListenerToStream(stream, failedListener);
     stream.write("\n  ");
@@ -121,7 +121,7 @@ const _logFailedListenersOfEvent = function(nameOfEvent, failedListeners) {
 };
 
 const _writeFailedListenerToStream = function(stream, errorAndFn) {
-  stream.write("*)");
+  stream.write("•)");
 
   const nameOfFunction = errorAndFn.listener.name;
   if (nameOfFunction) {
@@ -130,7 +130,7 @@ const _writeFailedListenerToStream = function(stream, errorAndFn) {
   } else {
     stream.write("anonimus ");
   }
-  
+
   _writeErrorToStream(stream, errorAndFn.error);
 };
 
