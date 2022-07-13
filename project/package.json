@@ -7,6 +7,6 @@
   },
   "scripts": {
     "test": "node src/tests/tests && node src/tests/testRunningSequenceTestsAndParallel"
-  }
+  },
   "version": "0.1.0"
 }
