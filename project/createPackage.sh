@@ -2,7 +2,9 @@
 
 rm tester.package.tar.gz
 
-tar -czvf tester.package.tar.gz \
+tar -czvf\
+  tester.package.tar.gz \
+  --transform='s,^,package/,'\
   --exclude='test*'\
-  --exclude='tests.js'\
+  esExport.mjs\
   ./../LICENCE package.json ./../README.md src
