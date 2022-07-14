@@ -1,3 +1,3 @@
 project/node_modules/
 project/package-lock.json
-project/tester.package.tar.gz
+project/buildingNpmPackage/tester.package.tar.gz

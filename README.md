@@ -4,10 +4,9 @@ Minimalistic module for testing.
 
 ### Installation 
 
-Download repo. In project folder execute script createPackage.sh.
+Download repo. In project/buildingNpmPackage folder execute script createPackage.sh.
 There will be file tester.package.tar.gz.
-Install module by package manager:
-`npm install path/to/tester.package.tar.gz`.
+Install module by package manager: `npm install path/to/tester.package.tar.gz`.
 
 ### Example of usage
 
@@ -39,6 +38,7 @@ tester.run();
 ```
 
 ### Links
+
 - [API documentation](/documentation/API.md)
 - [examples](/examples)
 
